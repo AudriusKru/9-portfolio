@@ -1,4 +1,63 @@
 .container {
     display: inline-block;
     width: 100%;
+    padding: 20px;
 }
+
+.container > .row {
+    display: inline-block;
+    width: 100%;
+    background-color: lightcyan;
+}
+
+.container > .row > [class*="col-"] {
+    float: left;
+}
+.container > .row > .col-2 {
+    float: left;
+    width: 100%;
+}
+.container > .row > .col-3 {
+    float: left;
+    width: 100%;
+}
+.container > .row > .col-4 {
+    float: left;
+    width: 100%;
+}
+.container > .row > .col-5 {
+    float: left;
+    width: 100%;
+}
+.container > .row > .col-6 {
+    float: left;
+    width: 100%;
+}
+.container > .row > .col-7 {
+    float: left;
+    width: 100%;
+}
+.container > .row > .col-12 {
+    float: left;
+    width: 100%;
+}
+
+@media (width: 575px) {
+   
+}
+
+@media (width: 767px) {
+
+}
+
+@media (width: 991px) {
+}
+
+@media (width: 1199px) {
+   
+}
+
+@media (width: 1399px) {
+    
+}
+
