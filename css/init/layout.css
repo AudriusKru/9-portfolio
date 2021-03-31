@@ -212,9 +212,9 @@
   
   @media (min-width: 767px) {
     .container > row {
-      width: 540px;
-      margin-left: calc(50% - 480px);
-      margin-right: calc(50% - 480px);
+      width: 740px;
+      margin-left: calc(50% - 370px);
+      margin-right: calc(50% - 370px);
     }
     .container > .row > .col-md-1 {
       width: var(--col1);
@@ -297,9 +297,9 @@
   
   @media (min-width: 991px) {
     .container > row {
-      width: 540px;
-      margin-left: calc(50% - 480px);
-      margin-right: calc(50% - 480px);
+      width: 940px;
+      margin-left: calc(50% - 470px);
+      margin-right: calc(50% - 470px);
     }
     .container > .row > .col-lg-1 {
       width: var(--col1);
@@ -382,9 +382,9 @@
   
   @media (min-width: 1199px) {
     .container > row {
-      width: 540px;
-      margin-left: calc(50% - 480px);
-      margin-right: calc(50% - 480px);
+      width: 1140px;
+      margin-left: calc(50% - 570px);
+      margin-right: calc(50% - 570px);
     }
     .container > .row > .col-xl-1 {
       width: var(--col1);
@@ -467,9 +467,9 @@
   
   @media (min-width: 1399px) {
     .container > row {
-      width: 540px;
-      margin-left: calc(50% - 480px);
-      margin-right: calc(50% - 480px);
+      width: 1320px;
+      margin-left: calc(50% - 660px);
+      margin-right: calc(50% - 660px);
     }
     .container > .row > .col-xxl-1 {
       width: var(--col1);
