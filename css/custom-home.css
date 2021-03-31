@@ -1,10 +1,7 @@
 /* init */
 @import '../css/init/reset.css';
-@import '../css/init/variables.css';
-@import '../css/init/layout.css';
-@import '../css/init/base.css';
+@import './init/variables.css';
+@import './init/layout.css';
+@import './init/base.css';
 /* 3rd-party */
-@import './3rd-party/font-awesome.min.css';
-/* components */
-@import './components/footer.css';
-@import './components/header.css';
+@import './css/3rd-party/.css';
