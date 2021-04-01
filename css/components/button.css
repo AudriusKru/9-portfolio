@@ -21,3 +21,15 @@
 .btn.red {
     background-color: red;
 }
+.btn.white {
+    background-color: #fff;
+    color: var(--color-blue);
+}
+.btn.creame {
+    background-color: var(--color-creame-dark);
+    color: #fff;
+}
+.btn.creame:hover {
+    background-color: var(--color-blue);
+    color: #fff;
+}
