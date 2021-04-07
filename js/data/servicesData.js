@@ -11,7 +11,7 @@ const servicesData = {
         },
         {
             img: 'mitech-box-image-style-01-image-01-100x108.png',
-            title: 'it design',
+            title: 'praskipina sita',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt velit accusamus voluptas',
             link: '#',
             active: false
