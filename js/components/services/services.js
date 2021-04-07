@@ -1,25 +1,46 @@
+import {isValidServices } from './isValidServices.js';
+import { isValidServiceItem } from "./isValidServiceItem.js";
+
+
+
 function services(selector, data) {
     // input    validation
+    if (!isValidServices(selector, data)) {
+        return false
+    }
     console.log(data);
 
     // logic
     const DOM = document.querySelector(selector);
+    if (!DOM) {
+        console.error('pagal pateikta selektoriu nerastas norimas elemtas.');
+        return false;
+    }
 
-    const servicesArray = data.list;
+    const { list, imgPath, maxCount} = data;
 
     let HTML = '';
+    let generatedSericesCount = 0;
 
-    for (let i = 0; i < servicesArray.length; i++) {
-        const service = servicesArray[i];
-        
+    for (let i = 0; i < list.length; i++) {
+        const service = list[i];
+        console.log(service);
 
+        // service item validation if (isValidServiceItem)
+        if (isValidServiceItem(service) ||
+            !service.active) {
+            continue;
+        }
+        if (generatedSericesCount === maxCount) {
+            break;
+        }
 
-
-        HTML += `<div class="col-12 col-md-6 col-lg-4 service-item">
-                <img src="./img/services/mitech-box-image-style-01-image-01-100x108.png" alt="">
-                <h4>it design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt velit accusamus voluptas.</p>
-                <a href="#" class="fa fa-long-arrow-right"></a>
+        generatedSericesCount++
+        HTML += `<div class="service-item">
+                    <img src="${imgPath + service.img}" alt="">
+                    <h4>${services.title}</h4>
+                    <p>${services.desription}</p>
+                    <a href="${service.link}" class="fa fa-long-arrow-right"></a>
                 </div>`;
     }
 

@@ -3,6 +3,8 @@
 /* header */
 /* hero */
 /* clients */
+import { servicesData } from './data/servicesData.js';
+import { services } from "./components/services/services.js";
 /* services */
 /* about company */
 /* achievements */
@@ -19,6 +21,7 @@
 /* hero */
 /* clients */
 /* services */
+services();
 /* about company */
 /* achievements */
 /* promo video */
